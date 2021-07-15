@@ -5,28 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login page | Good2go</title>
+  <title>Good2Go | Good2go</title>
 
-   <link rel="stylesheet" type="text/css" href="assets/css/userlogin.css"/>  
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>  
 </head>
 <body>
   <main>
- <h2>Login Page</h2><br>    
+    <br>
+    <br>
+    <br>
+ 
     <div class="login"> 
-     <form method="post" action="login.php">\
+     <form method="post" action="login.php">
 
     <?php include('errors.php'); ?>
 
     <div class="container">
-         <label>Username</label>
+      <img src="assets/images/logo.png" width="200px">
+         <label></label>
          <input type="text" name="username" id="Uname" placeholder="Username"  >
+         <br>
+         <br>
 
-         <label>Password</label>
+         <label></label>
          <input type="password" name="password"  id="Pass" placeholder="Password">
+         <br>
+         <br>
   
          <button type="submit" id="log" name="login_user">Login</button>
     </div>
     <p>
+      <br>
       Not yet a member? <a href="register.php"><label>Signup</label></a>
     </p>
     </form>

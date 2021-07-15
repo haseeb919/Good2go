@@ -28,11 +28,15 @@
   <main>
       <form action="showrequests.php" method="post">
         <div class="sidebar">
-           <img src="assets/images/logo.png" width="100px">
+           <img src="assets/images/logo.png" width="200px">
           
-  <a href="makerequest.php"><i class="fa fa-fw fa-home"></i> Make A Request</a>
+     <!-- logged in user information -->
+    <?php  if (isset($_SESSION['username'])) : ?>
+    Welcome <strong><?php echo $_SESSION['username']; ?>
+ <a href="makerequest.php"><i class="fa fa-fw fa-home"></i> Make A Request</a>
   <a href="viewrequest.php"><i class="fa fa-fw fa-wrench"></i> View Requests</a>
-  <a href="index.php?logout='1'"><i class="fa fa-fw fa-envelope"></i> Logout</a>
+  <a href="index.php?logout='1'"><i class="fa fa-fw fa-envelope"></i> Logout</a> </p>
+    <?php endif ?>
 </div>
     
 
